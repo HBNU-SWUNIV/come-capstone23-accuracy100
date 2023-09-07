@@ -17,8 +17,10 @@
   
 ## System Design
   - ### System Requirements
-    - OOO
-    - OOO
+    - Front-End : Flutter
+    - Back-End : Flask
+    - 딥러닝 모델(OCR)을 이용해 수기문자 검출 및 인식.
+    - 문자 분리 알고리즘을 적용해 두 문자가 검출되어 오인식되는 문제를 해결할 계획.
     
 ## Case Study
   - ### Description
