@@ -26,13 +26,16 @@ var thisyear = DateTime.now().year;
 var thismonth = DateTime.now().month;
 
 
-class GraphPageState extends State<GraphPage> {
+class GraphPageState extends State<GraphPage> with TickerProviderStateMixin{
   late List<_ChartData> mating_data_1;
   late List<_ChartData> mating_data_2;
   late TooltipBehavior _tooltip1;
   late TooltipBehavior _tooltip2;
   late TooltipBehavior _tooltip3;
   late TooltipBehavior _tooltip4;
+  late TabController _tabController;
+  List li = [];
+  int count = 0;
 
   @override
   initState(){
@@ -47,12 +50,25 @@ class GraphPageState extends State<GraphPage> {
     _tooltip3 = TooltipBehavior(enable: true);
     _tooltip4 = TooltipBehavior(enable: true);
 
+    _tabController = TabController(
+      length: 2,
+      vsync: this,  //vsync에 this 형태로 전달해야 애니메이션이 정상 처리됨
+    );
+    super.initState();
+
     //super.initState();
   }
-
-  List li = [];
-  int count = 0;
-
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  int tapindex=0;
+  void tabselected(int index){
+    print(index);
+    setState(() {
+      tapindex = index;
+    });
+  }
 
   preparegraph() async{
     var thisyear = DateTime.now().year;   // 년도
@@ -297,19 +313,51 @@ class GraphPageState extends State<GraphPage> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
-          title: Text('$thisyear'.toString()+"년 "+'$thismonth'.toString()+"월 목표 달성(통계)")
+        backgroundColor: Colors.white,
+        title: Text('$thisyear'.toString()+"년 "+'$thismonth'.toString()+"월 목표 달성(통계)"),
+        titleTextStyle: TextStyle(color:Colors.black, fontSize: 20, fontWeight: FontWeight.w500),
+        elevation: 0,
+        leading: IconButton(icon: Icon(Icons.arrow_back,color: Colors.grey,), onPressed:(){
+          Navigator.of(context).pop();
+        }),
       ),
       body: Scrollbar(
-        thickness: 10,
+        thickness: 7,
       controller: _scrollController, // <---- Here, the controller
       thumbVisibility: true, //always show scrollbar
       child: SingleChildScrollView(
-        padding: EdgeInsets.fromLTRB(10, 20, 10, 80),
+        padding: EdgeInsets.fromLTRB(10, 0, 10, 80),
         scrollDirection: Axis.vertical,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            TabBar(
+              tabs: [
+                Container(
+                  height: 50,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "그래프",
+                  ),
+                ),
+                Container(
+                  height: 50,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "목푯값",
+                  ),
+                ),
+              ],
+              onTap: tabselected,
+              indicatorWeight: 5.0,
+              indicatorColor: Colors.black,
+              labelColor: Colors.black,
+              labelStyle: TextStyle(fontWeight: FontWeight.w800),
+              unselectedLabelColor: Colors.black,
+              unselectedLabelStyle: TextStyle(fontWeight: FontWeight.w400),
+              controller: _tabController,
+            ),
+
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

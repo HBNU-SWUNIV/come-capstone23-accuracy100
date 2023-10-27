@@ -154,7 +154,7 @@ class MaternityModifyPageState extends State<MaternityModifyPage>{
   var flag = 0; // 서버에서 가져온 값을 한번만 표에 넣기 위함
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle( SystemUiOverlayStyle( statusBarColor: Colors.black));
+    // SystemChrome.setSystemUIOverlayStyle( SystemUiOverlayStyle( statusBarColor: Colors.black));
 
     if(listfromserver_mat_mo.isNotEmpty){
       if(flag==0) {

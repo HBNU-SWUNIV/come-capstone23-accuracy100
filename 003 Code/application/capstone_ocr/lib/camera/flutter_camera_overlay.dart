@@ -1,11 +1,15 @@
 import 'package:camera/camera.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_camera_overlay/model.dart';
+import 'package:intl/intl.dart';
+import 'package:ntp/ntp.dart';
+import 'package:http_parser/http_parser.dart';
 // import 'package:flutter_camera_overlay/overlay_shape.dart';
 import 'flutter_overlay_shape.dart';
-
+import 'package:image/image.dart' as imglib;
 typedef XFileCallback = void Function(XFile file);
 
 class CameraOverlay extends StatefulWidget {
@@ -149,8 +153,6 @@ class _FlutterCameraOverlayState extends State<CameraOverlay> {
                           }
                           XFile file = await controller.takePicture();
                           widget.onCapture(file);
-                          print("flutter_camera_overlay - camera charkakkk!");
-
                         },
                         icon: const Icon(
                           Icons.camera,
@@ -196,7 +198,6 @@ class _FlutterCameraOverlayState extends State<CameraOverlay> {
 
   }
 }
-
 // sendframe(File file, int i) async{
 //   print("sendframeEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
 //   final api = 'http://192.168.0.26:4000/api/newocrImageUpload';

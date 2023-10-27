@@ -263,10 +263,10 @@ class CameraOverlayPregnantState extends State<CameraOverlayPregnant> {
                                                 print('error : $err');
                                               });
 
-                                              Navigator.of(context).popUntil((route) => route.isFirst); // 처음 화면으로 돌아가기
-                                              await Navigator.push(context,
-                                                MaterialPageRoute(builder: (context) => PregnantPage(list)), // PregnantPage 넘어가기
-                                              );
+                                              // Navigator.of(context).popUntil((route) => route.isFirst); // 처음 화면으로 돌아가기
+                                              // await Navigator.push(context,
+                                              //   MaterialPageRoute(builder: (context) => PregnantPage(list)), // PregnantPage 넘어가기
+                                              // );
                                             }
                                           },
                                           icon: const Icon(

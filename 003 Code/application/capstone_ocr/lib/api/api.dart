@@ -9,7 +9,13 @@ import '../entities/Ocr_maternity.dart';
 import '../entities/Ocr_pregnant.dart';
 import 'package:ntp/ntp.dart';
 
-late final domain = "http://10.0.2.2:8080/";
+late final domain = "http://192.168.0.26:5001/";
+// late final domain = "http://192.168.1.227:8080/";
+// late final domain = "http://10.0.2.2:8080/";
+// late final domain = "http://127.0.0.1:8080/";
+// late final domain = "http://172.17.0.8:5000/";
+// late final domain = "http://210.110.250.118:5000/";
+
 
 register_api(String name, String email, String password) async{
   final api = domain+"api/members/new";
@@ -71,7 +77,7 @@ send_date_pregnant(List sendlist) async {
 // 서버로 현재 날짜를 보내고 분만사의 총산자수, 포유개시두수, 이유두수의 총합 받기
 send_date_maternity(List sendlist) async {
   // print("materntiy");
-  final api = domain+'ocrMaternitySendDate';
+  final api = domain+'api/ocrMaternitySendDate';
   final dio = Dio();
 
   final data={
@@ -159,9 +165,6 @@ Future<List> uploadimg_pregnant(File file)async{
     "files" : await MultipartFile.fromFile(file.path,
         filename: fileName, contentType : MediaType("image","jpg")),
   });
-  // final _formData={
-  //
-  // };
   Response response = await dio.post(
       api,
       data:_formData,
@@ -169,6 +172,9 @@ Future<List> uploadimg_pregnant(File file)async{
         // print('Rec: $rec , Total: $total');
       }
   );
+
+  // Response response = await dio.get(api);
+
   if(response.statusCode == 200){
     resultToast("upload success");
   }
@@ -176,16 +182,17 @@ Future<List> uploadimg_pregnant(File file)async{
     resultToast("upload failed");
   }
   print(response.data);
-  print(response.data.runtimeType);
+  // print(response.data.runtimeType);
   // Map<String,dynamic> jsonData = jsonDecode(response.data);
-  print(response.data['filename']);
-  List li = [];
-  li.add(response.data['filename']);
-  li.add(response.data['json_values']);
-
+  // print(response.data['filename']);
+  // List li = [];
+  // li.add(response.data['filename']);
+  // li.add(response.data['json_values']);
+//{filename: , json_values: [3478-4, 21, 8, 15, 22, 8, 27, 22, 4, 5, 4, 14, 2361-8, 3457-3, 10, 3, 11, 15, , 7, 8, 14, 10, 21, 12, 25]}
   // print('Successfully uploaded');
 
-  return li;
+  // return li;
+  return response.data;
 }
 // 서버로 임신사 사진 보내는 api
 // Future<List> uploadimg_pregnant(File file)async{
@@ -341,7 +348,7 @@ delete_pregnant() async{
 
 // 서버로 분만사 사진 보내는 api
 Future<List> uploadimg_maternity(File file)async{
-  final api =domain+'ocrImageUpload';
+  final api =domain+'api/ocrImageUpload';
   final dio = Dio();
 
   DateTime currentTime = await NTP.now();
@@ -351,10 +358,10 @@ Future<List> uploadimg_maternity(File file)async{
   String fileName = "mat"+formatDate+'.jpg';
 
   FormData _formData = FormData.fromMap({
-    "file" : await MultipartFile.fromFile(file.path,
+    "files" : await MultipartFile.fromFile(file.path,
         filename: fileName, contentType : MediaType("image","jpg")),
   });
-
+  print(_formData);
   Response response = await dio.post(
       api,
       data:_formData,
@@ -368,6 +375,12 @@ Future<List> uploadimg_maternity(File file)async{
   else{
     resultToast("upload failed");
   }
+  print(response.data);
+  List li = [];
+  li.add(response.data['filename']);
+  li.add(response.data['json_values']);
+
+  return li;
   return response.data;
 }
 

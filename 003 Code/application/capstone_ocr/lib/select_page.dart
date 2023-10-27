@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/services.dart';
 
 import 'camera/camera_overlay_maternity.dart';
 import 'camera/camera_overlay_pregnant.dart';
@@ -24,28 +25,28 @@ class SelectPage extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: _SelectPage2(),
+      home: _SelectPage(),
     );
   }
 }
 
-class _SelectPage2 extends StatefulWidget {
+class _SelectPage extends StatefulWidget {
   @override
-  _SelectPage2State createState() => _SelectPage2State();
+  _SelectPageState createState() => _SelectPageState();
 }
 
-class _SelectPage2State extends State<_SelectPage2> {
+class _SelectPageState extends State<_SelectPage> {
   int _index = 0;
   List<StatelessWidget> _pageList = [
     HomePage(),
     ServicePage(),
     ProfilePage(),
   ];
-
+  FocusNode focusNode = FocusNode();
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
 
+    return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: true,
@@ -54,13 +55,13 @@ class _SelectPage2State extends State<_SelectPage2> {
           style: TextStyle(color: Colors.black),
         ),
         // actions: <Widget>[
-          // IconButton(
-          //   icon: Icon(
-          //     Icons.add,
-          //     color: Colors.black,
-          //   ),
-          //   onPressed: () {},
-          // ),
+        // IconButton(
+        //   icon: Icon(
+        //     Icons.add,
+        //     color: Colors.black,
+        //   ),
+        //   onPressed: () {},
+        // ),
         // ],
       ),
       body: _pageList[_index],
@@ -89,12 +90,14 @@ class _SelectPage2State extends State<_SelectPage2> {
         unselectedItemColor: Colors.grey,
       ),
     );
+
   }
 }
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return ListView(
       children: <Widget>[
         _buildTop(context),
@@ -262,6 +265,7 @@ class HomePage extends StatelessWidget {
         title: Text('[이벤트] 공지 사항이 있습니다.'),
       );
     });
+
 
     return ListView(
       physics: NeverScrollableScrollPhysics(),

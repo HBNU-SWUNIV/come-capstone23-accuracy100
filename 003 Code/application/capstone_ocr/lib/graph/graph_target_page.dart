@@ -67,17 +67,19 @@ class TargetValueViewState extends State<TargetValueView>{
 
   }
 
+
   @override
   Widget build(BuildContext context) {
     final _scrollController = ScrollController();
     SystemChrome.setSystemUIOverlayStyle( SystemUiOverlayStyle( statusBarColor: Colors.black));
 
-        return Scaffold(
-        // appBar: AppBar(
-        //   backgroundColor: Colors.black,
-        //   title: Text(''),
-        //   systemOverlayStyle: SystemUiOverlayStyle.dark,
-        // ),
+
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+          title: Text(''),
+          systemOverlayStyle: SystemUiOverlayStyle.dark,
+        ),
 
         // appBar: AppBar(
           // title: Text("목표값 입력")
@@ -89,7 +91,8 @@ class TargetValueViewState extends State<TargetValueView>{
       thumbVisibility: true, //always show scrollbar
       child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
-          child: Container(
+          child:
+          Container(
             width: 1000,
             child: Column(
               children: [

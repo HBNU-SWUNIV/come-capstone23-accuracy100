@@ -29,9 +29,9 @@ class PregnantModifyPage extends StatefulWidget{
   static const routeName = '/OcrPregnantPage';
   // const PregnantPage({Key? key, this.title}) : super(key: key);
   // final List listfromserver_pre_mo;
-  final int seq_num = 0;
-  // PregnantModifyPage(this.seq_num);
-  PregnantModifyPage();
+  final int seq_num;
+  PregnantModifyPage(this.seq_num);
+  // PregnantModifyPage();
 
   @override
   PregnantModifyPageState createState() => PregnantModifyPageState();
@@ -146,7 +146,7 @@ class PregnantModifyPageState extends State<PregnantModifyPage>{
   var flag = 0; // 서버에서 가져온 값을 한번만 표에 넣기 위함;
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle( SystemUiOverlayStyle( statusBarColor: Colors.black));
+    // SystemChrome.setSystemUIOverlayStyle( SystemUiOverlayStyle( statusBarColor: Colors.black));
 
     if(listfromserver_pre_mo.isNotEmpty){
       if(flag==0) {
