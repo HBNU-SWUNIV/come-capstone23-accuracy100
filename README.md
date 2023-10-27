@@ -24,22 +24,26 @@
     - OCR 카메라, 리스트, 그래프 기능으로 모돈을 관리하는 모바일 어플리케이션이다.
     - 프론트엔드는 Flutter, 백엔드는 Flask, 데이터베이스는 MySQL을 사용한다.
   - ### 시스템 아키텍쳐
-     ![스크린샷 2023-10-25 215935](https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/6f8e52fd-4f83-4464-8d94-8b91c9a45130)
+    <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/6f8e52fd-4f83-4464-8d94-8b91c9a45130" width="550" height="200">
 
   - ### OCR 과정
-     ![스크린샷 2023-10-25 213504](https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/66fc4f12-a3a8-4d5c-8ce4-f2ae154be155)
+    <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/66fc4f12-a3a8-4d5c-8ce4-f2ae154be155" width="550" height="200">
 
   - ### APP UI
     - 로그인/회원가입 및 메인화면
-      ![image](https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/933359f7-140d-4167-a56a-821d51af7ac0)
+      
+      <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/933359f7-140d-4167-a56a-821d51af7ac0" width="600" height="400">
     - OCR 카메라
-      ![image](https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/5105cdf3-751e-47b9-a5d1-590667bbfad2)
+       - 카메라로 현황판의 윤곽선 검출 후 OCR.
+       - OCR 결과가 표 안에 입력되고, 오인식된 문자 수정 후 DB에 저장. 
 
-
+      <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/5105cdf3-751e-47b9-a5d1-590667bbfad2" width="400" height="400">
     - 리스트
-      ![image](https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/c80e8aa4-5ba6-41fb-b1c0-692faaac37bb)
+      
+      <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/c80e8aa4-5ba6-41fb-b1c0-692faaac37bb" width="400" height="400">
     - 그래프 & 목표수
-      ![image](https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/652729e5-5a04-4566-93b9-9e9184a18b54)
+      
+      <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/652729e5-5a04-4566-93b9-9e9184a18b54" width="300" height="400">
 
   - ### System Requirements
     - Front-End : Flutter
