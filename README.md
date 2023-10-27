@@ -17,12 +17,15 @@
   
 ## System Design
   - ### Skills
-  - ![js][(https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
-  - ![js](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-  - ![js](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-  - ![js](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-  - ![js](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
-  - 
+  - ![js](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![js](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+  - ![js](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) ![js](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) ![js](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+  - ### 프로젝트 개요
+    -1. 7-Segment 형식의 돈사 현황판을 사용하며, edge detection으로 현황판을 검출하고 CNN 기반의 모델을 학습시켜 OCR 기능을 수행한다.
+    -2. OCR 카메라, 리스트, 그래프 기능으로 모돈을 관리하는 모바일 어플리케이션이다.
+    -3. 프론트엔드는 Flutter, 백엔드는 Flask, 데이터베이스는 MySQL을 사용한다.
+  - ### 시스템 아키텍쳐
+    -<img src="스크린샷 2023-10-25 215935](https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/0a9dcfc1-8473-49b5-acfe-8c2c210c1313" width="700" height="150">
+
   - ### System Requirements
     - Front-End : Flutter
     - Back-End : Flask
