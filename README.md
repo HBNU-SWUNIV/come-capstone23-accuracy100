@@ -16,11 +16,13 @@
   - 최근 스마트 ICT 양돈 시스템을 도입하여 전산 시스템과 연동해 실시간으로 사육돈 정보를 관리할 수 있지만, 외국인 노동자들은 전산작업에 익숙하지 않고 한국어 소통에 불편함이 있어 새롭게 바뀐 시스템을 교육하기 쉽지않다.
   
 ## System Design
+  - ### Skills
+  - ![js](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+  - 
   - ### System Requirements
     - Front-End : Flutter
     - Back-End : Flask
-    - 딥러닝 모델(OCR)을 이용해 수기문자 검출 및 인식.
-    - 문자 분리 알고리즘을 적용해 두 문자가 검출되어 오인식되는 문제를 해결할 계획.
+    - OpenCV와 CNN 기반의 모델로 OCR.
     
 ## Case Study
   - ### Description
