@@ -24,10 +24,22 @@
     - OCR 카메라, 리스트, 그래프 기능으로 모돈을 관리하는 모바일 어플리케이션이다.
     - 프론트엔드는 Flutter, 백엔드는 Flask, 데이터베이스는 MySQL을 사용한다.
   - ### 시스템 아키텍쳐
+      - front-end : ios와 android 모두에서 실행 가능하도록 크로스플랫폼인 Flutter를 이용해 개발한다.
+      - back-end : 모델 실행에 적합한 파이썬 환경의 Flask로 api서버를 구축하고, 여러 클라이언트 요청을 비동기적으로 처리가능한 MySQL을 데이터베이스로 사용한다. 
     <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/6f8e52fd-4f83-4464-8d94-8b91c9a45130" width="550" height="200">
+  - ### 전체 시스템 구성도
+     <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/06774773-7859-4fc5-87b6-f02f2ebea700" width="550" height="200">
 
-  - ### OCR 과정
+  - ### OCR
+    - OCR이란?
+        광학 문자 인식 (OCR, Optical Character Recognition)은 이미지 속 텍스트를 컴퓨터가 읽을 수 있는 포맷의 텍스트로 변환하는 기능.
+        OCR = Text detection + Text recognition
+    - OCR 과정
     <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/66fc4f12-a3a8-4d5c-8ce4-f2ae154be155" width="550" height="200">
+      - 1. 7-Segment 형식의 수기방식
+      - 2. Edge Detection 기능을 이용한한 현황판 검출
+      - 3. OpenCV라이브러리를 이용한 이미지 전처리 및 문자 검출
+      - 4. CNN 기반의 모델을 이용한 문자 인식 
 
   - ### APP UI
     - 로그인/회원가입 및 메인화면
@@ -54,10 +66,7 @@
         
       <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/652729e5-5a04-4566-93b9-9e9184a18b54" width="300" height="400">
 
-  - ### System Requirements
-    - Front-End : Flutter
-    - Back-End : Flask
-    - OpenCV와 CNN 기반의 모델로 OCR.
+  - ### 데이터베이스 설계계
   
 ## Conclusion
   - ### 기대 효과
@@ -66,4 +75,4 @@
     3. 사용하기 편리한 스마트폰 앱으로 전산작업에 익숙하지 않은 외국인 노동자들도 원활한 업무 가능.
     4. 돈사 데이터들을 통계그래프로 보여줌으로써 돈사를 관리감독하고 향후계획 수립에 도움을 줌.
 ## Project Outcome
-- ### 20XX 년 OO학술대회 
+- ### 2024년 동계 학술대회 제출 계획획
