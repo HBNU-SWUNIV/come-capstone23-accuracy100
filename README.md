@@ -28,7 +28,7 @@
       - back-end : 모델 실행에 적합한 파이썬 환경의 Flask로 api서버를 구축하고, 여러 클라이언트 요청을 비동기적으로 처리가능한 MySQL을 데이터베이스로 사용한다. 
     <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/6f8e52fd-4f83-4464-8d94-8b91c9a45130" width="550" height="200">
   - ### 전체 시스템 구성도
-     <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/06774773-7859-4fc5-87b6-f02f2ebea700" width="550" height="200">
+     <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/06774773-7859-4fc5-87b6-f02f2ebea700" width="550" height="400">
 
   - ### OCR
     - OCR이란?
