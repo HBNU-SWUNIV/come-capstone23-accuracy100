@@ -15,7 +15,7 @@
     - [프로젝트 개요](#프로젝트-개요)
     - [시스템 아키텍쳐](#시스템-아키텍쳐)
     - [전체 시스템 구성도](#전체-시스템-구성도)
-3. [O.C.R](#ocr)
+3. [OCR](#ocr)
     - [OCR이란?](#ocr이란?)
     - [OCR과정](#ocr과정)
     - [7-Segment 형식의 현황판과 데이터셋 구축](#7-Segment-형식의-현황판과-데이터셋-구축)
@@ -61,7 +61,7 @@
 
 
 ## OCR
-  - ### OCR이란?
+  - ### ocr이란?
   >    광학 문자 인식 (OCR, Optical Character Recognition)은 이미지 속 문자를 컴퓨터가 읽을 수 있는 포맷의 텍스트로 변환하는 기능.
   >   
   >    OCR = Text detection + Text recognition
