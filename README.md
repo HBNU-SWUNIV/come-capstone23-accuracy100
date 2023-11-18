@@ -26,6 +26,8 @@
   - 돈사의 열악한 업무환경으로인해 인력 수급이 원활하지 않고, 인건비 또한 상승하고 있다.
 - ### 기존 해결책의 문제점
   - 최근 스마트 ICT 양돈 시스템을 도입하여 전산 시스템과 연동해 실시간으로 사육돈 정보를 관리할 수 있지만, 외국인 노동자들은 전산작업에 익숙하지 않고 한국어 소통에 불편함이 있어 새롭게 바뀐 시스템을 교육하기 쉽지않다.
+- ### 제안하는 해결책
+  - OCR 기술을 돈사의 현황판 업무에 접목시키고, 기존 작업자들이 사용하기 편리한 스마트폰 어플리케이션으로 돼지 현황 관리 자동화 시스템을 구현한다.
 
 ## System Design
   - ### Skills
@@ -105,11 +107,10 @@
 
        > 무거운 딥러닝 모델 대신 가벼운 CNN 구조의 모델을 인식모델로 사용함.
        >     
-       > 딥러닝 모델(deep-text-recognition)보다 약 7배의 추론속도 향상.
+       > 딥러닝 모델(deep-text-recognition-benchmark)보다 약 7배의 추론속도 향상.
      
          model = models.Sequential([
-           layers.Conv2D(32, kernel_size=(5, 5), strides=(1, 1),
-           padding='same', activation='relu', input_shape=(32, 32, 3)),
+           layers.Conv2D(32, kernel_size=(5, 5), strides=(1, 1), padding='same', activation='relu', input_shape=(32, 32, 3)),
            layers.MaxPooling2D(pool_size=(2, 2), strides=(2, 2)),
            layers.Conv2D(64, kernel_size=(2, 2), activation='relu', padding='same'),
            layers.MaxPooling2D(pool_size=(2, 2)),
