@@ -8,11 +8,11 @@
 
 ## 목차
 1. [Project Background](#Project-Background)
-2. [System Design]
-3. [OCR]
-4. [App UI]
-5. [Database]
-6. [Conclusion]
+2. [System Design](#System-Design)
+3. [OCR](#OCR)
+4. [App UI](#APP-UI)
+5. [Database](#Database)
+6. [Conclusion](#Conclusion)
 -----------
 ## Project Background
 - ### 필요성
