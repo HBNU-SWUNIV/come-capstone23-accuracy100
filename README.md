@@ -8,11 +8,13 @@
 
 ## 목차
 1. [Project Background](#Project-Background)
-2. [System Design](#System-Design)
-3. [OCR](#OCR)
-4. [App UI](#APP-UI)
-5. [Database](#Database)
-6. [Conclusion](#Conclusion)
+    - [필요성](#필요성)
+    - [기존 해결책의 문제점](#기존-해결책의-문제점)
+3. [System Design](#System-Design)
+4. [OCR](#OCR)
+5. [App UI](#APP-UI)
+6. [Database](#Database)
+7. [Conclusion](#Conclusion)
 -----------
 ## Project Background
 - ### 필요성
