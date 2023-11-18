@@ -11,10 +11,24 @@
     - [필요성](#필요성)
     - [기존 해결책의 문제점](#기존-해결책의-문제점)
 3. [System Design](#System-Design)
-4. [OCR](#OCR)
-5. [App UI](#APP-UI)
-6. [Database](#Database)
-7. [Conclusion](#Conclusion)
+    -[Skills](#Skills)
+    -[프로젝트 개요](#프로젝트-개요)
+    -[시스템 아키텍쳐](#시스템-아키텍쳐)
+    -[전체 시스템 구성도](#전체-시스템-구성도)
+5. [OCR](#OCR)
+    -[OCR이란?](#OCR이란?)
+    -[OCR과정](#OCR과정)
+        -[7-Segment 형식의 현황판과 데이터셋 구축](#7-Segment-형식의-현황판과-데이터셋-구축)
+        -[Edge Detection 기능을 이용한 현황판 검출](#Edge-Detection-기능을-이용한-현황판-검출)
+        -[OpenCV라이브러리를 이용한 이미지 전처리 및 문자 검출](#OpenCV라이브러리를-이용한-이미지-전처리-및-문자-검출)
+        -[CNN 기반의 모델을 이용한 문자 인식](#CNN-기반의-모델을-이용한-문자-인식)
+7. [App UI](#APP-UI)
+    -[로그인/회원가입 및 메인화면](#로그인/회원가입-및-메인화면)
+    -[OCR 카메라](#OCR-카메라)
+    -[리스트](#리스트)
+    -[그래프 & 목표수정](#그래프-&-목표수정)
+9. [Database](#Database)
+10. [Conclusion](#Conclusion)
 -----------
 ## Project Background
 - ### 필요성
@@ -133,7 +147,7 @@
       >  
       > <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/c80e8aa4-5ba6-41fb-b1c0-692faaac37bb" width="400" height="400">
       
-  4. 그래프 & 목표수
+  4. 그래프 & 목표수정
      
       > - 데이터 항목별 월별/주별 통계를 시각화하는 페이지.
       > - ‘목표 설정 버튼’을 통해 월 별 돈사의 목표값을 설정 기능.
