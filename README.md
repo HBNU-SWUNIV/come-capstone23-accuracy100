@@ -15,7 +15,7 @@
     - [프로젝트 개요](#프로젝트-개요)
     - [시스템 아키텍쳐](#시스템-아키텍쳐)
     - [전체 시스템 구성도](#전체-시스템-구성도)
-5. [OCR](#OCR)
+5. [O.C.R](#O.C.R)
     - [OCR이란?](#OCR이란?)
     - [OCR과정](#OCR과정)
     - [7-Segment 형식의 현황판과 데이터셋 구축](#7-Segment-형식의-현황판과-데이터셋-구축)
@@ -60,7 +60,7 @@
      <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/06774773-7859-4fc5-87b6-f02f2ebea700" width="550" height="350">
 
 
-## OCR
+## O.C.R
   - ### OCR이란?
   >    광학 문자 인식 (OCR, Optical Character Recognition)은 이미지 속 문자를 컴퓨터가 읽을 수 있는 포맷의 텍스트로 변환하는 기능.
   >   
