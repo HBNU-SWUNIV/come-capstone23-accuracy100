@@ -10,25 +10,25 @@
 1. [Project Background](#Project-Background)
     - [필요성](#필요성)
     - [기존 해결책의 문제점](#기존-해결책의-문제점)
-3. [System Design](#System-Design)
+2. [System Design](#System-Design)
     - [Skills](#Skills)
     - [프로젝트 개요](#프로젝트-개요)
     - [시스템 아키텍쳐](#시스템-아키텍쳐)
     - [전체 시스템 구성도](#전체-시스템-구성도)
-5. [O.C.R](#O.C.R)
+3. [O.C.R](#O.C.R)
     - [OCR이란?](#OCR이란?)
     - [OCR과정](#OCR과정)
     - [7-Segment 형식의 현황판과 데이터셋 구축](#7-Segment-형식의-현황판과-데이터셋-구축)
     - [Edge Detection 기능을 이용한 현황판 검출](#Edge-Detection-기능을-이용한-현황판-검출)
     - [OpenCV라이브러리를 이용한 이미지 전처리 및 문자 검출](#OpenCV라이브러리를-이용한-이미지-전처리-및-문자-검출)
     - [CNN 기반의 모델을 이용한 문자 인식](#CNN-기반의-모델을-이용한-문자-인식)
-7. [App UI](#APP-UI)
+4. [App UI](#APP-UI)
     - [로그인/회원가입 및 메인화면](#로그인/회원가입-및-메인화면)
     - [OCR 카메라](#OCR-카메라)
     - [리스트](#리스트)
     - [그래프 & 목표수정](#그래프-&-목표수정)
-9. [Database](#Database)
-10. [Conclusion](#Conclusion)
+5. [Database](#Database)
+6. [Conclusion](#Conclusion)
 -----------
 ## Project Background
 - ### 필요성
@@ -124,7 +124,7 @@
           ])
 
 ## APP UI
-  1. 로그인/회원가입 및 메인화면
+  ### 1. 로그인/회원가입 및 메인화면
      
       > - 로그인/회원가입 후 메인페이지로 전환.
       > - 두개의 탭(임신사, 분만사)으로 구성.
@@ -132,14 +132,14 @@
       >
       > <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/933359f7-140d-4167-a56a-821d51af7ac0" width="600" height="400">
       
-  3. OCR 카메라
+  ### 3. OCR 카메라
      
       > - 카메라로 현황판의 윤곽선 검출 후 OCR.
       > - OCR 결과가 표 안에 입력되고, 오인식된 문자 수정 후 DB에 저장. 
       >
       > <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/5105cdf3-751e-47b9-a5d1-590667bbfad2" width="400" height="400">
       
-  5. 리스트
+  ### 5. 리스트
      
       > - 업로드된 현황판 내역을 리스트로 확인하는 페이지.
       > - 모돈번호 검색기능으로 현황판 필터링.
@@ -147,7 +147,7 @@
       >  
       > <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/c80e8aa4-5ba6-41fb-b1c0-692faaac37bb" width="400" height="400">
       
-  4. 그래프 & 목표수정
+  ### 4. 그래프 & 목표수정
      
       > - 데이터 항목별 월별/주별 통계를 시각화하는 페이지.
       > - ‘목표 설정 버튼’을 통해 월 별 돈사의 목표값을 설정 기능.
