@@ -82,7 +82,7 @@
 
  - ### 2. Edge Detection 기능을 이용한 현황판 검출
      
-     > 앱 카메라에서 실시간으로 현황판의 윤곽선을 검출해 이미지의 왜곡을 보정하고, 불필요한 배경을 제거한다.
+     > 앱 카메라에서 [Edge Detection](https://pub.dev/packages/edge_detection) 기능으로 실시간으로 현황판의 윤곽선을 검출해 이미지의 왜곡을 보정하고, 불필요한 배경을 제거한다.
       
      <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/2cd55ea1-9d66-43c6-b05b-2ca38c4002e2" width="200" height="400">
 
