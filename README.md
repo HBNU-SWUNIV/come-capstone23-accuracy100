@@ -18,10 +18,10 @@
 5. [OCR](#OCR)
     - [OCR이란?](#OCR이란?)
     - [OCR과정](#OCR과정)
-        - [7-Segment 형식의 현황판과 데이터셋 구축](#7-Segment-형식의-현황판과-데이터셋-구축)
-        - [Edge Detection 기능을 이용한 현황판 검출](#Edge-Detection-기능을-이용한-현황판-검출)
-        - [OpenCV라이브러리를 이용한 이미지 전처리 및 문자 검출](#OpenCV라이브러리를-이용한-이미지-전처리-및-문자-검출)
-        - [CNN 기반의 모델을 이용한 문자 인식](#CNN-기반의-모델을-이용한-문자-인식)
+    - [7-Segment 형식의 현황판과 데이터셋 구축](#7-Segment-형식의-현황판과-데이터셋-구축)
+    - [Edge Detection 기능을 이용한 현황판 검출](#Edge-Detection-기능을-이용한-현황판-검출)
+    - [OpenCV라이브러리를 이용한 이미지 전처리 및 문자 검출](#OpenCV라이브러리를-이용한-이미지-전처리-및-문자-검출)
+    - [CNN 기반의 모델을 이용한 문자 인식](#CNN-기반의-모델을-이용한-문자-인식)
 7. [App UI](#APP-UI)
     - [로그인/회원가입 및 메인화면](#로그인/회원가입-및-메인화면)
     - [OCR 카메라](#OCR-카메라)
@@ -61,16 +61,16 @@
 
 
 ## OCR
-  - #### OCR이란?
+  - ### OCR이란?
   >    광학 문자 인식 (OCR, Optical Character Recognition)은 이미지 속 문자를 컴퓨터가 읽을 수 있는 포맷의 텍스트로 변환하는 기능.
   >   
   >    OCR = Text detection + Text recognition
  
-  - #### OCR 과정
+  - ### OCR 과정
   <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/66fc4f12-a3a8-4d5c-8ce4-f2ae154be155" width="550" height="200">   
 
   
-  1. 7-Segment 형식의 현황판과 데이터셋 구축
+  - ### 1. 7-Segment 형식의 현황판과 데이터셋 구축
      - 수기방식
        
         > 7-Segment는 7개의 획으로 숫자를 표현하는 방식으로, 다양한 국적의 외국인 노동자들의 필체를 통일함으로써 인식률을 높이기 위해 현황판을 7-Segment 형식으로 구성하였다.
@@ -92,7 +92,7 @@
 
 
 
-  2. Edge Detection 기능을 이용한 현황판 검출
+ - ### 2. Edge Detection 기능을 이용한 현황판 검출
      
      앱 카메라에서 실시간으로 현황판의 윤곽선을 검출해 이미지의 왜곡을 보정하고, 불필요한 배경을 제거한다.
       
@@ -101,13 +101,13 @@
 
 
 
-  3. OpenCV라이브러리를 이용한 이미지 전처리 및 문자 검출
+  - ### 3. OpenCV라이브러리를 이용한 이미지 전처리 및 문자 검출
      
        <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/be863bc2-45a0-4f85-b7b5-fb052c8b1cb1" width="200" height="300">  <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/4b886cde-e296-4b4f-a982-820ccf94a8a7" width="200" height="300">  <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/a2071ff9-4570-4847-8941-66d3571de640" width="200" height="300">
 
 
 
-  4. CNN 기반의 모델을 이용한 문자 인식
+   - ### 4. CNN 기반의 모델을 이용한 문자 인식
 
      무거운 딥러닝 모델 대신 가벼운 CNN 구조의 모델을 인식모델로 사용함 -> 추론시간 감소
      
