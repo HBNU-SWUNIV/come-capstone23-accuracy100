@@ -19,27 +19,52 @@
   - ### Skills
     - ![js](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![js](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
     - ![js](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) ![js](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) ![js](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+      
   - ### 프로젝트 개요
     - 7-Segment 형식의 돈사 현황판을 사용하며, edge detection으로 현황판을 검출하고 CNN 기반의 모델을 학습시켜 OCR 기능을 수행한다.
     - OCR 카메라, 리스트, 그래프 기능으로 모돈을 관리하는 모바일 어플리케이션이다.
     - 프론트엔드는 Flutter, 백엔드는 Flask, 데이터베이스는 MySQL을 사용한다.
+      
   - ### 시스템 아키텍쳐
       - front-end : ios와 android 모두에서 실행 가능하도록 크로스플랫폼인 Flutter를 이용해 개발한다.
-      - back-end : 모델 실행에 적합한 파이썬 환경의 Flask로 api서버를 구축하고, 여러 클라이언트 요청을 비동기적으로 처리가능한 MySQL을 데이터베이스로 사용한다. 
-    <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/6f8e52fd-4f83-4464-8d94-8b91c9a45130" width="550" height="200">
+      - back-end : 모델 실행에 적합한 파이썬 환경의 Flask로 api서버를 구축하고,
+                  여러 클라이언트 요청을 비동기적으로 처리가능한 MySQL을 데이터베이스로 사용한다. 
+      <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/6f8e52fd-4f83-4464-8d94-8b91c9a45130" width="550" height="200">
+  
   - ### 전체 시스템 구성도
-     <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/06774773-7859-4fc5-87b6-f02f2ebea700" width="550" height="400">
+     <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/06774773-7859-4fc5-87b6-f02f2ebea700" width="550" height="350">
 
   - ### OCR
-    - OCR이란?
+    - #### OCR이란?
         광학 문자 인식 (OCR, Optical Character Recognition)은 이미지 속 텍스트를 컴퓨터가 읽을 수 있는 포맷의 텍스트로 변환하는 기능.
+
         OCR = Text detection + Text recognition
-    - OCR 과정
-    <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/66fc4f12-a3a8-4d5c-8ce4-f2ae154be155" width="550" height="200">
-      - 1. 7-Segment 형식의 수기방식
-      - 2. Edge Detection 기능을 이용한한 현황판 검출
-      - 3. OpenCV라이브러리를 이용한 이미지 전처리 및 문자 검출
-      - 4. CNN 기반의 모델을 이용한 문자 인식 
+    - #### OCR 과정
+    <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/66fc4f12-a3a8-4d5c-8ce4-f2ae154be155" width="550" height="200">   
+
+    
+      1. 7-Segment 형식의 현황판
+         - 7-Segment란?
+            7개의 획으로 숫자를 표현하는 방식으로, 다양한 국적의 외국인 노동자들의 필체를 통일함으로써 인식률을 높이기 위해 현황판을 7-Segment 형식으로 구성하였다.
+           
+           <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/ef5e6c56-8e73-4c16-a48f-eac8b9af4682" width="300" height="50">   
+
+          - 현황판 종류
+            - 임신사 : 임신한 모돈을 분만 전까지 관리하는 곳으로, 초발정일·교배일·웅돈번호·재발확인일·분만예정일등 13항목으로 구성
+            - 분만사 : 분만 후의 모돈과 자돈을 관리하는 곳으로, 분만일·총산자수·초유개시두수·생시체중·이유일·이유두수·이유체중 등 15항목으로 구성
+              
+                <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/8b5f7663-3730-4a7a-bc13-95be537b077d" width="450" height="400">   
+
+      2. 데이터셋 구축
+         - 0~9까지의 숫자로 구성.
+         - 현업에서 실제로 작성한 현황판에서 수기 문자를 라벨링하여 수집,
+         - 1의 검출인식도를 개선하기 위해 OpenCV로 검출한 1의 데이터도 수집.
+         - CutOut, ColorJitter, GaussianBlur, HorizontalFilp, VerticalFlip 과 같은 데이터 증강 기법 활용.
+          <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/3c92fa50-81a4-4b43-9fa3-a1f960e51fa1" width="550" height="100">   
+
+      4. Edge Detection 기능을 이용한한 현황판 검출
+      5. OpenCV라이브러리를 이용한 이미지 전처리 및 문자 검출
+      6. CNN 기반의 모델을 이용한 문자 인식 
 
   - ### APP UI
     - 로그인/회원가입 및 메인화면
@@ -52,21 +77,19 @@
 
       <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/5105cdf3-751e-47b9-a5d1-590667bbfad2" width="400" height="400">
     - 리스트
-      - 업로드된 모든 현황판 기록들을 리스트로 볼 수 있는 페이지.
-      - 모돈번호를 검색하여 해당하는 모돈의 현황판을 검색하는 기능을 가짐.
-      - 항목을 누르면 해당 항목의 수정페이지로 전환.
-      - 삭제버튼을 누르면 해당 항목이 데이터베이스에서 삭제됨.
+      - 업로드된 현황판 내역을 리스트로 확인하는 페이지.
+      - 모돈번호 검색기능으로 현황판 필터링.
+      - 현황판 내역 삭제 / 업데이트 기능 제공.
         
       <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/c80e8aa4-5ba6-41fb-b1c0-692faaac37bb" width="400" height="400">
     - 그래프 & 목표수
-      - 총산자수, 교배복수, 이유두수의 주차별 누적값을 보여주는 막대 그래프.
-      - 월을 변경하는 버튼으로 지난기록들 또한 볼 수 있음. 
-      - 월별 목표치를 빨간선으로 보여주고, 목표달성률을 시각화.
-      - 목표수정 버튼을 누르면 목표수정페이지로 전환. 네 항목에 대해 월별 목표값을 설정 및 수정.
+      - 데이터 항목별 월별/주별 통계를 시각화하는 페이지.
+      - ‘목표 설정 버튼’을 통해 월 별 돈사의 목표값을 설정 기능.
+
         
       <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/652729e5-5a04-4566-93b9-9e9184a18b54" width="300" height="400">
 
-  - ### 데이터베이스 설계계
+  - ### 데이터베이스 설계
   
 ## Conclusion
   - ### 기대 효과
