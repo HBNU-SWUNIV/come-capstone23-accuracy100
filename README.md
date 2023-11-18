@@ -7,14 +7,14 @@
 - 20201944 안희진
 
 ## 목차
-1. [Project Background]
+1. [Project Background](#-필요성)
 2. [System Design]
 3. [OCR]
 4. [App UI]
 5. [Database]
 6. [Conclusion]
 -----------
-## <u>Teamate</u> Project Background
+## Project Background
 - ### 필요성
   - 현재 돈사에서는 현황판에 돼지 정보를 적은 뒤 컴퓨터 문서에 옮겨적는 작업에 인력이 많이 소모된다.
   - 다양한 국적의 노동자가 많아 숫자 표기 방식이 다양하다.
