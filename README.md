@@ -1,6 +1,10 @@
 # 한밭대학교 컴퓨터공학과 Accuracy100팀
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=250&section=header&&text=돈사%20현황판%20수기%20숫자%20OCR%20앱%20&animation=twinkling&fontSize=35" />
 
+**주제** 
+: 돈사 현황판 속 7-segment형식의 수기 숫자를 OCR을 이용해 디지털화며 모돈 정보를 관리할 수 있는 어플리케이션.
+
+
 **팀 구성**
 - 20171580 김응준 
 - 20201778 이다혜
