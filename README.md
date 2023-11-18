@@ -78,7 +78,7 @@
 
  - ### 2. Edge Detection 기능을 이용한 현황판 검출
      
-     앱 카메라에서 실시간으로 현황판의 윤곽선을 검출해 이미지의 왜곡을 보정하고, 불필요한 배경을 제거한다.
+     > 앱 카메라에서 실시간으로 현황판의 윤곽선을 검출해 이미지의 왜곡을 보정하고, 불필요한 배경을 제거한다.
       
      <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/2cd55ea1-9d66-43c6-b05b-2ca38c4002e2" width="200" height="400">
 
@@ -86,14 +86,22 @@
 
 
   - ### 3. OpenCV라이브러리를 이용한 이미지 전처리 및 문자 검출
-     
+    
+      > OpenCV의 findContour 함수를 이용 및 후처리를 통해 검출.
+      >   
+      > 정해진 형식의 현황판이기 때문에 딥러닝 모델(CRAFT, TextFuseNet)과 비슷한 검출성능을 가지면서 두배이상의 추론속도 향상.
+
        <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/be863bc2-45a0-4f85-b7b5-fb052c8b1cb1" width="200" height="300">  <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/4b886cde-e296-4b4f-a982-820ccf94a8a7" width="200" height="300">  <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/a2071ff9-4570-4847-8941-66d3571de640" width="200" height="300">
+
+       
 
 
 
    - ### 4. CNN 기반의 모델을 이용한 문자 인식
 
-     무거운 딥러닝 모델 대신 가벼운 CNN 구조의 모델을 인식모델로 사용함 -> 추론시간 감소
+       > 무거운 딥러닝 모델 대신 가벼운 CNN 구조의 모델을 인식모델로 사용함.
+       >     
+       > 딥러닝 모델(deep-text-recognition)보다 약 7배의 추론속도 향상.
      
          model = models.Sequential([
            layers.Conv2D(32, kernel_size=(5, 5), strides=(1, 1),
