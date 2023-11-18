@@ -53,7 +53,7 @@
             - 임신사 : 임신한 모돈을 분만 전까지 관리하는 곳으로, 초발정일·교배일·웅돈번호·재발확인일·분만예정일등 13항목으로 구성
             - 분만사 : 분만 후의 모돈과 자돈을 관리하는 곳으로, 분만일·총산자수·초유개시두수·생시체중·이유일·이유두수·이유체중 등 15항목으로 구성
               
-                <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/8b5f7663-3730-4a7a-bc13-95be537b077d" width="450" height="400">   
+                <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/8b5f7663-3730-4a7a-bc13-95be537b077d" width="450" height="300">   
 
       2. 데이터셋 구축
          - 0~9까지의 숫자로 구성.
@@ -63,8 +63,10 @@
           <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/3c92fa50-81a4-4b43-9fa3-a1f960e51fa1" width="550" height="100">   
 
       4. Edge Detection 기능을 이용한한 현황판 검출
-      5. OpenCV라이브러리를 이용한 이미지 전처리 및 문자 검출
-      6. CNN 기반의 모델을 이용한 문자 인식 
+         - 앱 카메라에서 실시간으로 현황판의 윤곽선을 검출해 이미지의 왜곡을 보정하고, 불필요한 배경을 제거한다.
+           
+      6. OpenCV라이브러리를 이용한 이미지 전처리 및 문자 검출
+      7. CNN 기반의 모델을 이용한 문자 인식 
 
   - ### APP UI
     - 로그인/회원가입 및 메인화면
