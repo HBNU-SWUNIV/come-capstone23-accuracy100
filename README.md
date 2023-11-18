@@ -118,6 +118,8 @@
            layers.Dense(1000, activation='relu'),
            layers.Dense(10, activation='softmax')
           ])
+     <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/58f2a36a-f73c-4331-9901-a0d02b495120" width="500" height="400">
+
 
 ## APP UI
   ### 1. 로그인/회원가입과 메인화면
