@@ -155,6 +155,10 @@
 
 
 ## Database
+ > - members : 회원정보를 저장하는 테이블
+ > - ocr_pregnant : 임신사 정보를 저장하는 테이블
+ > - ocr_maternity : 분만사 정보를 저장하는 테이블
+ > - target : 월별 목표값을 저장하는 테이블
   ![Untitled](https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/cbf0343e-a4c5-4c79-b7c8-51e8f9782063)
 
 
