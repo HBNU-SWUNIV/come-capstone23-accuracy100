@@ -55,7 +55,7 @@
   >    OCR = Text detection + Text recognition
  
   - ### OCR 과정
-  <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/66fc4f12-a3a8-4d5c-8ce4-f2ae154be155" width="650" height="300">   
+  <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/66fc4f12-a3a8-4d5c-8ce4-f2ae154be155" width="650" height="260">   
 
   
   - ### 7-Segment 형식의 현황판과 데이터셋 구축
