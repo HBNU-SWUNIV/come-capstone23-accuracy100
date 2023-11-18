@@ -8,19 +8,9 @@
 
 ## 목차
 1. [Project Background](#Project-Background)
-    - [필요성](#필요성)
-    - [기존 해결책의 문제점](#기존-해결책의-문제점)
 2. [System Design](#System-Design)
-    - [Skills](#Skills)
-    - [프로젝트 개요](#프로젝트-개요)
-    - [시스템 아키텍쳐](#시스템-아키텍쳐)
-    - [전체 시스템 구성도](#전체-시스템-구성도)
 3. [OCR](#OCR)
 4. [App UI](#APP-UI)
-    - [로그인/회원가입 및 메인화면](#1.-로그인/회원가입과-메인화면)
-    - [OCR 카메라](#2.-OCR-카메라)
-    - [3. 리스트](#3.-리스트)    
-    - [그래프 & 목표수정](#4.-그래프-&-목표수정)
 6. [Database](#Database)
 7. [Conclusion](#Conclusion)
 -----------
