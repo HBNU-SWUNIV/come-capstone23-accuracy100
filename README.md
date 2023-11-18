@@ -7,7 +7,7 @@
 - 20201944 안희진
 
 ## 목차
-1. [Project Background](#-필요성)
+1. [Project Background](#Project-Background)
 2. [System Design]
 3. [OCR]
 4. [App UI]
