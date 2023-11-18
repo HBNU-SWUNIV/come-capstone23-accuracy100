@@ -101,27 +101,26 @@
               ])
 ------------
   - ### APP UI
-    - 로그인/회원가입 및 메인화면
-      - 메인화면은 임신사/분만사 두개의 페이지로 구성.
-        
-      <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/933359f7-140d-4167-a56a-821d51af7ac0" width="600" height="400">
-    - OCR 카메라
-       - 카메라로 현황판의 윤곽선 검출 후 OCR.
-       - OCR 결과가 표 안에 입력되고, 오인식된 문자 수정 후 DB에 저장. 
-
-      <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/5105cdf3-751e-47b9-a5d1-590667bbfad2" width="400" height="400">
-    - 리스트
-      - 업로드된 현황판 내역을 리스트로 확인하는 페이지.
-      - 모돈번호 검색기능으로 현황판 필터링.
-      - 현황판 내역 삭제 / 업데이트 기능 제공.
-        
-      <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/c80e8aa4-5ba6-41fb-b1c0-692faaac37bb" width="400" height="400">
-    - 그래프 & 목표수
-      - 데이터 항목별 월별/주별 통계를 시각화하는 페이지.
-      - ‘목표 설정 버튼’을 통해 월 별 돈사의 목표값을 설정 기능.
-
-        
-      <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/652729e5-5a04-4566-93b9-9e9184a18b54" width="300" height="400">
+    1. 로그인/회원가입 및 메인화면
+      > - 메인화면은 임신사/분만사 두개의 페이지로 구성.
+      >  
+      > <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/933359f7-140d-4167-a56a-821d51af7ac0" width="600" height="400">
+    2. OCR 카메라
+       > - 카메라로 현황판의 윤곽선 검출 후 OCR.
+       > - OCR 결과가 표 안에 입력되고, 오인식된 문자 수정 후 DB에 저장. 
+       >
+       > <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/5105cdf3-751e-47b9-a5d1-590667bbfad2" width="400" height="400">
+    3. 리스트
+      > - 업로드된 현황판 내역을 리스트로 확인하는 페이지.
+      > - 모돈번호 검색기능으로 현황판 필터링.
+      > - 현황판 내역 삭제 / 업데이트 기능 제공.
+      >  
+      > <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/c80e8aa4-5ba6-41fb-b1c0-692faaac37bb" width="400" height="400">
+    4. 그래프 & 목표수
+      > - 데이터 항목별 월별/주별 통계를 시각화하는 페이지.
+      > - ‘목표 설정 버튼’을 통해 월 별 돈사의 목표값을 설정 기능.
+      >
+      > <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/652729e5-5a04-4566-93b9-9e9184a18b54" width="300" height="400">
 
   - ### 데이터베이스 설계
   
