@@ -99,8 +99,13 @@
 
        <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/be863bc2-45a0-4f85-b7b5-fb052c8b1cb1" width="200" height="300">  <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/4b886cde-e296-4b4f-a982-820ccf94a8a7" width="200" height="300">  <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/a2071ff9-4570-4847-8941-66d3571de640" width="200" height="300">
 
-       
+       > 현황판의 형식이 일정한 것을 이용해서 숫자가 검출되서는 안되는 부분에 박스가 생길 경우 제거 크기가 너무 크거나 작은 박스 제거 
+       <img src="https://github.com/DAHYEAH/7SegmentProject/assets/120447438/45de74a1-e532-431b-aca9-bee4dab898eb" width="550" height="300">
 
+       > 숫자 검출 영역과 인접하고 비슷한 크기로 검출되는 경우 이미지를 이진화하여 오검출되는 빈도수를 확실히 줄이고 recognition모델 수행시 신뢰도가 현저히 낮은 점을 이용
+       
+       > 검출된 이미지 중 신뢰도가 낮은 경우에는 제거
+       <img src="https://github.com/DAHYEAH/7SegmentProject/assets/120447438/d43ec2df-4e2e-4bc7-8f5b-95826d0b5935" width="500" height="150">
 
 
    - ### 4. CNN 기반의 모델을 이용한 문자 인식
