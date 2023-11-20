@@ -60,7 +60,7 @@
   <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/66fc4f12-a3a8-4d5c-8ce4-f2ae154be155" width="650" height="260">   
 
   
-  - ### 7-Segment 형식의 현황판과 데이터셋 구축
+  - ### 1. 7-Segment 형식의 현황판과 데이터셋 구축
      - 수기방식
        
         > 7-Segment는 7개의 획으로 숫자를 표현하는 방식으로, 다양한 국적의 외국인 노동자들의 필체를 통일함으로써 인식률을 높이기 위해 현황판을 7-Segment 형식으로 구성하였다.
