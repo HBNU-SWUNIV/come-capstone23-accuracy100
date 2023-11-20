@@ -76,7 +76,7 @@
       - 데이터셋 구축
         > - 0~9까지의 숫자로 구성.
         > - 현업에서 실제로 작성한 현황판에서 수기 문자를 라벨링하여 수집,
-        > - 1의 검출인식도를 개선하기 위해 OpenCV로 검출한 1의 데이터도 수집.
+        > - 1의 인식도를 개선하기 위해 OpenCV로 검출한 1의 데이터도 수집.
         > - CutOut, ColorJitter, GaussianBlur, HorizontalFilp, VerticalFlip 과 같은 데이터 증강 기법 활용.
         >   <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/3c92fa50-81a4-4b43-9fa3-a1f960e51fa1" width="550" height="100">   
 
