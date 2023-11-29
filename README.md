@@ -72,7 +72,7 @@
        > 1. 임신사 : 임신한 모돈을 분만 전까지 관리. 초발정일·교배일·웅돈번호·재발확인일·분만예정일등 13항목.
        > 2. 분만사 : 분만후의 모돈과 자돈을 관리. 분만일·총산자수·포유개시두수·생시체중·이유일·이유두수·이유체중 등 15항목.
        >    
-       >   <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/8b5f7663-3730-4a7a-bc13-95be537b077d" width="450" height="300">   
+       >   <img src="https://github.com/HBNU-SWUNIV/come-capstone23-accuracy100/assets/120447438/8b5f7663-3730-4a7a-bc13-95be537b077d" width="350" height="200">   
     
       - 데이터셋 구축
         > - 0~9까지의 숫자로 구성.
